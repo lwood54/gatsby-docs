@@ -26,6 +26,8 @@ export default () => {
       return (
             <StaticQuery query={titleQuery}>
                   {data => {
+                        // This is an alternate to doing:
+                        // <StaticQuery query={} render={() => {}} />
                         return (
                               <Layout>
                                     <h1>
